@@ -1,0 +1,139 @@
+.ConsentManager {
+  height: 100vh;
+  background: white;
+  overflow: scroll;
+  margin: 5% 25%;
+  position: absolute;
+  z-index: 1000000;
+}
+
+.hide {
+  display: none;
+}
+
+.consentManagerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ConsentManager,
+.consentManagerContainer {
+  width: 50vw;
+  max-width: 645px;
+  min-width: 556px;
+}
+
+nav {
+  margin-top: 30px;
+  display: flex;
+  position: sticky;
+  top: 20px;
+}
+
+.navBarLeft {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.navBarRight {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 10%;
+}
+
+nav button {
+  border: none;
+  background-color: white;
+  padding-right: 40%;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+section h1 {
+  font-size: 40px;
+}
+
+section p {
+  font-size: 20px;
+  padding: 0 8%;
+}
+
+div.types,
+div.toggleSwitches {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+}
+
+.toggleSwitches ul {
+  list-style-type: none;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.savePreferences,
+.acceptAll,
+.denyAll {
+  text-align: center;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.savePreferences {
+  background-color: #060;
+  width: 200px;
+  box-shadow: 10px 5px 5px #060;
+  border: none;
+}
+
+.acceptAll {
+  background-color: #060;
+  width: 145px;
+  box-shadow: 10px 5px 5px #060;
+  border: none;
+}
+
+.acceptAll:active,
+.savePreferences:active,
+.denyAll:active {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+  /* Moving button 4px to y-axis */
+}
+
+.denyAll {
+  background-color: #bbb;
+  width: 125px;
+  box-shadow: 10px 5px 5px #bbb;
+  border: none;
+}
+
+.types ul {
+  list-style-type: disc;
+}
